@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<title>はじめてのVue.js</title>
+<script src="https://unpkg.com/vue"></script>
+<body>
+  <h1>題名</h1>
+  <div id="app">
+    <p>
+        <!--テンプレート構文(Mustache記法) -->
+        {{ items[0].name }}: {{ items[0].price }} × {{ items[0].quantity }}
+    </p>
+    <p>
+      フィルタ処理 {{ items[0].price * items[0].quantity | numberWithDelimiter }} <br>
+      フィルタ処理 {{ 1000 | numberWithDelimiter }}
+    </p>
+  </div>
+</body>
+<script src="app.js"></script>
